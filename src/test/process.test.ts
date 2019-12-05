@@ -2,10 +2,45 @@ import { handleCheckin } from "../process/process"
 import { expect } from "chai"
 import { CredentialsService } from "../proxyclick/credentials";
 import * as sinon from 'sinon';
+import { getVisitors } from "../proxyclick/visitors";
 
 // Do not modify this file
 // TODO: Make sure all the test cases pass. 
 // Read carefully the description of the tests
+
+describe('Search function', () => {
+
+    it('Should returns all the visitors with the same lastname', () => {
+
+        expect(getVisitors({
+            lastname: 'Lannister'
+        })).to.deep.equals([{
+            firstname: "Tyrion",
+            lastname: "Lannister",
+            email: "tyrion@lannister.com",
+            companyId: 4
+        },
+            ,
+        {
+            firstname: "Cersei",
+            lastname: "Lannister",
+            email: "cersei@lannister.com",
+            companyId: 4
+        },
+        {
+            firstname: "Jaime",
+            lastname: "Lannister",
+            email: "jaime@lannister.com",
+            companyId: 4
+        },
+        {
+            firstname: "Tywin",
+            lastname: "Lannister",
+            email: "tywin@lannister.com",
+            companyId: 4
+        }])
+    });
+})
 
 describe('Errors cases', () => {
 
@@ -46,7 +81,7 @@ describe('Happy paths', () => {
         })
     });
 
-    it.only('Should store the credentials and not generate it twice', () => {
+    it('Should store the credentials and not generate it twice', () => {
         const event = {
             email: "jonsnow@thewall.com",
             companyId: 1

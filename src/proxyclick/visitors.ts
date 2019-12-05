@@ -1,7 +1,3 @@
-import { visitors } from "../../data/visitors"
-
-// Do not modify this file
-
 export interface IVisitor {
     firstname: string,
     lastname: string,
@@ -14,9 +10,6 @@ export function getVisitors(filter: {
     lastname?: string,
     email?: string
 }) {
-    return visitors.filter(v => {
-        return (!v.email || v.email === filter.email) &&
-            (!v.firstname || v.firstname === filter.firstname) &&
-            (!v.lastname || v.lastname === filter.lastname)
-    })
+
+    // TODO : Create that will search through the visitors database (../../data/visitors) and returns an array of visitors matching the criteria
 }

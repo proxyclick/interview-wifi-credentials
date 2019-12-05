@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -w -c --recursive build/test",
+    "test": "mocha -w -c --recursive build/src/test",
     "watch": "concurrently \"tsc -w\" \"nodemon --watch build build/src/app.js\"",
     "build": "tsc",
     "start": "node build/src/app.js"
@@ -24,6 +24,6 @@
     "@types/node": "^12.12.14",
     "typescript": "^3.7.3",
     "@types/mocha": "^5.2.7",
-    "@types/sinon": "^7.5.1",
+    "@types/sinon": "^7.5.1"
   }
 }
