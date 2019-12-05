@@ -5,11 +5,14 @@ export interface IVisitor {
     companyId: number
 }
 
-export function getVisitors(filter: {
-    firstname?: string,
-    lastname?: string,
-    email?: string
-}) {
+export const VisitorsService = {
 
-    // TODO : Create that will search through the visitors database (../../data/visitors) and returns an array of visitors matching the criteria
+    getVisitors: function (filter: {
+        firstname?: string,
+        lastname?: string,
+        email?: string
+    }) {
+
+        // TODO : Create that will search through the visitors database (../../data/visitors) and returns an array of visitors matching the criteria
+    },
 }

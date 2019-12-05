@@ -2,7 +2,7 @@ import { handleCheckin } from "../process/process"
 import { expect } from "chai"
 import { CredentialsService } from "../proxyclick/credentials";
 import * as sinon from 'sinon';
-import { getVisitors } from "../proxyclick/visitors";
+import { VisitorsService } from "../proxyclick/visitors";
 
 // Do not modify this file
 // TODO: Make sure all the test cases pass. 
@@ -12,7 +12,7 @@ describe('Search function', () => {
 
     it('Should returns all the visitors with the same lastname', () => {
 
-        expect(getVisitors({
+        expect(VisitorsService.getVisitors({
             lastname: 'Lannister'
         })).to.deep.equals([{
             firstname: "Tyrion",
@@ -80,6 +80,7 @@ describe('Happy paths', () => {
             password: '76bd7564'
         })
     });
+
 
     it('Should store the credentials and not generate it twice', () => {
         const event = {
