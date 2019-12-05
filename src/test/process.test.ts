@@ -81,6 +81,25 @@ describe('Happy paths', () => {
         })
     });
 
+    it('Should find the visitor, identify a mismatch, and update it', () => {
+        const event = {
+            firstname: "Updated",
+            lastname: "Guy",
+            email: "kdrogo@doth.raki",
+            companyId: 5
+        }
+        const spy = sinon.spy(VisitorsService, 'updateVisitor');
+        expect(handleCheckin(event)).to.deep.equals({
+            username: 'uguy',
+            password: '4d323850'
+        })
+
+        expect(spy.calledWith('kdrogo@doth.raki', {
+            firstname: "Updated",
+            lastname: "Guy"
+        })).to.be.true;
+    })
+
 
     it('Should store the credentials and not generate it twice', () => {
         const event = {
