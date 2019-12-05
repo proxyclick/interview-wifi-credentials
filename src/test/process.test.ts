@@ -49,7 +49,7 @@ describe('Errors cases', () => {
         const event = {
             email: 'incognito_guy@unknow.com'
         }
-        expect(handleCheckin(event)).to.throw(Error('Visitor not found'))
+        expect(() => handleCheckin(event)).to.throw(Error('Visitor not found'));
     });
 
     it('Should return an error if company id does not match the company set for this visitor', () => {
@@ -60,7 +60,7 @@ describe('Errors cases', () => {
             email: "jonsnow@thewall.com",
             companyId: 3
         }
-        expect(handleCheckin(event)).to.throw(Error('Company ID Mismatch'))
+        expect(() => handleCheckin(event)).to.throw(Error('Company ID Mismatch'))
     });
 });
 
