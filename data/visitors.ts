@@ -4,7 +4,7 @@ export const visitors: IVisitor[] = [
     {
         firstname: "Jon",
         lastname: "Snow",
-        email: "jonsnow@thewall.nw",
+        email: "jonsnow@thewall.com",
         companyId: 1
     },
     {
