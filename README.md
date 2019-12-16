@@ -4,7 +4,9 @@ This is a WiFi credentials generator micro-service that responds to Visitor chec
 
 The function to generate the credentials is provided and is located in `proxyclick/credentials.ts`
 The visitors should be searched through via the Proxyclick API: https://api.proxyclick.com/v1/docs/#introduction
-The company ID to be used is the following: CO-CXER585
+* The company ID to be used is the following: CO-CXER585
+* Client ID: `98C5EB84170E6FB3617C47A5B17ECFACB4A0FD49`
+* Client secret will be sent via email
 
 # Goal
 
@@ -13,6 +15,7 @@ The company ID to be used is the following: CO-CXER585
 * Then, write code in the function `handleCheckin` located in process/process.ts
 * Feel free to create more files with your structured code if you feel it is necessary
 * For the last test case, we would like to optimize the process so that consecutive checks-in of the same visitor do not need to call `generate` multiple times. The first result should be saved in-memory
+* Create a git branch `solution/<your name>` to write your solution
 
 # Supposed flow
 
