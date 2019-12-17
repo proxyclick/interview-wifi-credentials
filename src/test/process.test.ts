@@ -8,41 +8,30 @@ import { VisitorsService } from "../proxyclick/visitors";
 // TODO: Make sure all the test cases pass. 
 // Read carefully the description of the tests
 
-describe('Errors cases', () => {
+describe('Main paths', () => {
 
-    it('Should return an error if visitor is not found', () => {
-
-        const event = {
-            email: 'incognito_guy@unknown.com'
-        }
-        expect(() => handleCheckin(event)).to.throw('Visitor not found');
-    });
-});
-
-describe('Happy paths', () => {
-
-    it('Should find the visitor, generate credentials and returns it', () => {
+    it('Should find the visitor, generate credentials and returns it', async () => {
 
         const event = {
             email: "dtargaryen@proxyclick.com",
         }
 
-        expect(handleCheckin(event)).to.deep.equals({
+        expect(await handleCheckin(event)).to.deep.equals({
             username: 'dtargaryen',
-            password: '76bd7564'
+            password: '308f0103'
         })
     });
 
-    it('Should find the visitor, identify a mismatch, and update it', () => {
+    it('Should find the visitor, identify a mismatch, and update it', async () => {
         const event = {
             firstname: "Khal",
             lastname: "Drogo",
             email: "kdrogo@doth.raki"
         }
         const spy = sinon.spy(VisitorsService, 'updateVisitor');
-        expect(handleCheckin(event)).to.deep.equals({
+        expect(await handleCheckin(event)).to.deep.equals({
             username: 'kdrogo',
-            password: '4d323850'
+            password: '81f9d5db'
         })
 
         expect(spy.calledWith('kdrogo@doth.raki', {
@@ -52,21 +41,21 @@ describe('Happy paths', () => {
     })
 
 
-    it('Should store the credentials and not generate it twice', () => {
+    it('Should store the credentials and not generate it twice', async () => {
         const event = {
             email: "jon@snow.com",
         }
 
         const spy = sinon.spy(CredentialsService, 'generate');
 
-        expect(handleCheckin(event)).to.deep.equals({
+        expect(await handleCheckin(event)).to.deep.equals({
             username: 'jsnow',
-            password: 'dda7edec'
+            password: '48c2cf16'
         })
 
-        expect(handleCheckin(event)).to.deep.equals({
+        expect(await handleCheckin(event)).to.deep.equals({
             username: 'jsnow',
-            password: 'dda7edec'
+            password: '48c2cf16'
         })
 
         expect(spy.calledOnce).to.be.true;
