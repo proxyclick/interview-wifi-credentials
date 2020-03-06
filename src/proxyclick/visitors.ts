@@ -27,7 +27,7 @@ interface VisitorsResult {
   function: string,
   about: string,
   licensePlate: string,
-  // customFields: array,
+  customFields: Array<any>,
 }
 
 export const VisitorsService = {
