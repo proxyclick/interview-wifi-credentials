@@ -1,35 +1,56 @@
 # Visitor WiFi Credentials generator exercise
 
-This is a WiFi credentials generator micro-service that responds to Visitor check-in events with credentials (username/password)
+This is a WiFi credentials generator micro-service that responds to Visitor check-in events with credentials (username/password).
 
-The function to generate the credentials is provided and is located in `proxyclick/credentials.ts`
-The visitors should be searched through via the Proxyclick API: https://api.proxyclick.com/v1/docs/#introduction
-* The company ID to be used is the following: CO-CXER585
-* Client ID: `98C5EB84170E6FB3617C47A5B17ECFACB4A0FD49`
-* Client secret will be sent via email
+# Usage
 
-# Goal
-
-* Make sure that all the tests cases located in `visitors.test.ts` and `process.test.ts` pass. Do not modify the test files
-* Start by writing the body of the function `getVisitors` that search through visitors using Proxyclick API
-* Then, write code in the function `handleCheckin` located in process/process.ts
-* Feel free to create more files with your structured code if you feel it is necessary
-* For the last test case, we would like to optimize the process so that consecutive checks-in of the same visitor do not need to call `generate` multiple times. The first result should be saved in-memory
-* Create a git branch `solution/<your name>` to write your solution
+-   `npm install` install the necessary dependencies
+-   `npm run build` build the javascript
+-   `npm start` run the process
+-   `npm run watch` continuously build and run the process
+-   `npm test` continously run the test cases
 
 # Supposed flow
 
-1) Check-in event coming in. Find visitor corresponding to email from Proxyclick API
-2) If visitor not found -> throw an error
-3) If visitor is found but firstname/lastname mismatch -> Update visitor using the function `updateVisitor`
-4) Generate credentials for this visitor and returns it
+A Visitor checks in, triggering a Visitor event.
 
-# Commands
+1.  Find the Visitor by querying the Proxyclick API
+2.  If the Visitor is not found, throw an Error
+3.  If the first name or last name mismatch, update the Visitor
+4.  Generate and returns WiFi credentials for this Visitor
 
-* `npm install` install the necessary dependencies
-* `npm run build` build the javascript
-* `npm start` run the process
-* `npm run watch` continuously build and run the process
-* `npm test` continously run the test cases
-  
+# Goal
+
+1.  Implement `getVisitors()` in `src/proxyclick/visitors.ts`
+2.  Implement `handleCheckin()` in `src/process/process.ts`
+
+_Do not edit the test files and make sure they all pass._
+
+# Details
+
+## Get Visitors
+
+Implement `getVisitors()` in `src/proxyclick/visitors.ts`.
+
+Use the [Proxyclick API](ttps://api.proxyclick.com/v1/docs/#introduction) to search for visitors by email and/or company name. Use the following parameters to get an access token.
+
+| Parameter       | Value                                      |
+| :-------------- | :----------------------------------------- |
+| `client_id`     | `98C5EB84170E6FB3617C47A5B17ECFACB4A0FD49` |
+| `client_secret` | The secret sent by mail                    |
+| `email`         | The email you were registered with         |
+| `password`      | The password you set when you registered   |
+
+The company ID in which to look for Visitors is `CO-CXER585`.
+
+## Handle Visitor check-in event
+
+Implement `handleCheckin()` in `src/process/process.ts`.
+
+This function must:
+
+-   Get a Visitor by using `getVisitors()`, throw an Error if none is found.
+-   Update a Visitor by calling `updateVisitor()` in `src/proxyclick/visitors.ts` if the first or last name mismatch.
+-   Generate credentials for the Visitor by calling `generate()` in `src/proxyclick/credentials.ts`, store them, and return them. If previous credentials are stored for a Visitor, don't generate them again.
+
 If you have any questions, feel free to contact us
