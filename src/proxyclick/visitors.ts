@@ -8,7 +8,7 @@ export interface IVisitor {
     email: string
 }
 
-interface VisitorsResult {
+export interface IVisitorResult {
   object: string,
   id: string,
   firstname: string,
@@ -40,7 +40,7 @@ export const VisitorsService = {
     getVisitors: async function (filter: {
         email?: string,
         companyName?: string
-    }): Promise<VisitorsResult[]> {
+    }): Promise<IVisitorResult[]> {
         const queryString = Object.entries(filter)
           .filter(([key]) => key !== '')
           .map(([key, value]) => `${key}=${value}`)

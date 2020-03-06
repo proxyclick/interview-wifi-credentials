@@ -14,7 +14,11 @@ const {
   PROXYCLICK_PASSWORD
 } = process.env;
 
-async function getToken() {
+/**
+ * Gets an OAuth token from Proxyclick API.
+ * @returns string access_token
+ */
+async function getToken(): Promise<string> {
   const auth = qs.stringify({
     grant_type: 'password',
     client_id: PROXYCLICK_CLIENT_ID,
@@ -33,7 +37,11 @@ async function getToken() {
   return access_token;
 }
 
-async function getAxiosConfig() {
+/**
+ * Builds an Axios config object with API credentials.
+ * @returns object
+ */
+async function getAxiosConfig(): Promise<object> {
   if ('' === token) {
     token = await getToken();
   }
@@ -46,7 +54,12 @@ async function getAxiosConfig() {
 }
 
 export default {
-  get: async (uri: string) => {
+  /**
+   * Performs an request on the Proxyclick API.
+   * @param string uri
+   * @returns the request promise
+   */
+  get: async (uri: string): Promise<any> => {
     const config = await getAxiosConfig();
 
     return axios.get(`${PROXYCLICK_API_PREFIX}${uri}`, config);
