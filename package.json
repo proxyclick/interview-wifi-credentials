@@ -30,6 +30,7 @@
     "btoa": "^1.2.1",
     "dotenv": "^8.2.0",
     "qs": "^6.9.1",
+    "simple-json-db": "^1.2.2",
     "typescript": "^3.7.3"
   }
 }

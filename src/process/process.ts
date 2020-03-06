@@ -1,5 +1,6 @@
 import { VisitorsService, IVisitor as IVisitorEvent } from "../proxyclick/visitors";
 import { CredentialsService } from "../proxyclick/credentials";
+import db from './db';
 
 async function updateVisitorNameIfMismatch(visitorEvent: Partial<IVisitorEvent>, visitorFound: Partial<IVisitorEvent>) {
   const isEqual = ['firstname', 'lastname'].every(key => {
@@ -39,5 +40,13 @@ export async function handleCheckin(visitorEvent: Partial<IVisitorEvent>) {
 
   const { firstname, lastname } = await updateVisitorNameIfMismatch(visitorEvent, visitor);
 
-  return CredentialsService.generate(firstname, lastname, email);
+  if (db.has(email)) {
+    return db.get(email)
+  }
+
+  const credentials = CredentialsService.generate(firstname, lastname, email);
+
+  db.set(email, credentials);
+
+  return credentials;
 }
