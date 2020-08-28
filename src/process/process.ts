@@ -6,7 +6,6 @@ import { IVisitor as IVisitorEvent } from "../proxyclick/visitors";
  * @returns a credentials object, containing the credentials for this visitor
  */
 export async function handleCheckin(visitorEvent: Partial<IVisitorEvent>) {
-
-    // TODO: Write the body of this function
-    // This function should returns a ICredentials object
+  // TODO: Write the body of this function
+  // This function should returns a ICredentials object
 }
