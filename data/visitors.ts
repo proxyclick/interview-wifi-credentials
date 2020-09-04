@@ -14,20 +14,20 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "English",
+      displayName: "anglais",
     },
     pictureOriginal:
-      "https://api.proxyclick.com/full/images/CE66B9442AD83A0F7E156ABB62E1C86E42E9BCD57C85D19B78DD1EF14DBC7B9916AA8901256102E8C194D5EDBB98DFCBE89509765A89260F1656D1C60B943BCCE3E94BE22BE2E6AF0E409A69B68608E2/0%2D128x128%2Dpo.png",
+      "https://api.proxyclick.com/full/images/4C7D2DCDC85C7FD0BEBC36A6F8BCAFE91226352D84CD70DA162ED999FF500721E92A934E41D67D58C9C0DC30DCABC9D0AD0D8661C2C685332C6CBE3419112F57C16478B02D7DAAF4F59C280D3DAA9542/0%2D128x128%2Dpo.png",
     picture24:
-      "https://api.proxyclick.com/full/images/CE66B9442AD83A0F7E156ABB62E1C86E42E9BCD57C85D19B78DD1EF14DBC7B9916AA8901256102E8C194D5EDBB98DFCBE89509765A89260F1656D1C60B943BCCE3E94BE22BE2E6AF0E409A69B68608E2/0%2D128x128%2Dpo_24.png",
+      "https://api.proxyclick.com/full/images/4C7D2DCDC85C7FD0BEBC36A6F8BCAFE91226352D84CD70DA162ED999FF500721E92A934E41D67D58C9C0DC30DCABC9D0AD0D8661C2C685332C6CBE3419112F57C16478B02D7DAAF4F59C280D3DAA9542/0%2D128x128%2Dpo_24.png",
     picture36:
-      "https://api.proxyclick.com/full/images/CE66B9442AD83A0F7E156ABB62E1C86E42E9BCD57C85D19B78DD1EF14DBC7B9916AA8901256102E8C194D5EDBB98DFCBE89509765A89260F1656D1C60B943BCCE3E94BE22BE2E6AF0E409A69B68608E2/0%2D128x128%2Dpo_36.png",
+      "https://api.proxyclick.com/full/images/4C7D2DCDC85C7FD0BEBC36A6F8BCAFE91226352D84CD70DA162ED999FF500721E92A934E41D67D58C9C0DC30DCABC9D0AD0D8661C2C685332C6CBE3419112F57C16478B02D7DAAF4F59C280D3DAA9542/0%2D128x128%2Dpo_36.png",
     picture64:
-      "https://api.proxyclick.com/full/images/CE66B9442AD83A0F7E156ABB62E1C86E42E9BCD57C85D19B78DD1EF14DBC7B9916AA8901256102E8C194D5EDBB98DFCBE89509765A89260F1656D1C60B943BCCE3E94BE22BE2E6AF0E409A69B68608E2/0%2D128x128%2Dpo_64.png",
+      "https://api.proxyclick.com/full/images/4C7D2DCDC85C7FD0BEBC36A6F8BCAFE91226352D84CD70DA162ED999FF500721E92A934E41D67D58C9C0DC30DCABC9D0AD0D8661C2C685332C6CBE3419112F57C16478B02D7DAAF4F59C280D3DAA9542/0%2D128x128%2Dpo_64.png",
     picture128:
-      "https://api.proxyclick.com/full/images/CE66B9442AD83A0F7E156ABB62E1C86E42E9BCD57C85D19B78DD1EF14DBC7B9916AA8901256102E8C194D5EDBB98DFCBE89509765A89260F1656D1C60B943BCCE3E94BE22BE2E6AF0E409A69B68608E2/0%2D128x128%2Dpo_128.png",
+      "https://api.proxyclick.com/full/images/4C7D2DCDC85C7FD0BEBC36A6F8BCAFE91226352D84CD70DA162ED999FF500721E92A934E41D67D58C9C0DC30DCABC9D0AD0D8661C2C685332C6CBE3419112F57C16478B02D7DAAF4F59C280D3DAA9542/0%2D128x128%2Dpo_128.png",
     picture192:
-      "https://api.proxyclick.com/full/images/CE66B9442AD83A0F7E156ABB62E1C86E42E9BCD57C85D19B78DD1EF14DBC7B9916AA8901256102E8C194D5EDBB98DFCBE89509765A89260F1656D1C60B943BCCE3E94BE22BE2E6AF0E409A69B68608E2/0%2D128x128%2Dpo_192.png",
+      "https://api.proxyclick.com/full/images/4C7D2DCDC85C7FD0BEBC36A6F8BCAFE91226352D84CD70DA162ED999FF500721E92A934E41D67D58C9C0DC30DCABC9D0AD0D8661C2C685332C6CBE3419112F57C16478B02D7DAAF4F59C280D3DAA9542/0%2D128x128%2Dpo_192.png",
     function: null,
     about: null,
     licensePlate: null,
@@ -50,20 +50,20 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "English",
+      displayName: "anglais",
     },
     pictureOriginal:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture24:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture36:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture64:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture128:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture192:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     function: null,
     about: null,
     licensePlate: null,
@@ -86,20 +86,20 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "English",
+      displayName: "anglais",
     },
     pictureOriginal:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture24:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture36:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture64:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture128:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture192:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     function: null,
     about: null,
     licensePlate: null,
@@ -122,20 +122,20 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "English",
+      displayName: "anglais",
     },
     pictureOriginal:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture24:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture36:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture64:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture128:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture192:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     function: null,
     about: null,
     licensePlate: null,
@@ -158,20 +158,20 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "English",
+      displayName: "anglais",
     },
     pictureOriginal:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture24:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture36:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture64:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture128:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture192:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     function: null,
     about: null,
     licensePlate: null,
@@ -194,20 +194,20 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "English",
+      displayName: "anglais",
     },
     pictureOriginal:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture24:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture36:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture64:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture128:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture192:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     function: null,
     about: null,
     licensePlate: null,
@@ -230,20 +230,20 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "English",
+      displayName: "anglais",
     },
     pictureOriginal:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture24:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture36:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture64:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture128:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     picture192:
-      "https://static.proxyclick.com/47d07526/app/img/vm-visitor-avatar.png",
+      "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
     function: null,
     about: null,
     licensePlate: null,
