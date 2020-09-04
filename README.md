@@ -31,6 +31,7 @@ The visitors should be searched through via the Proxyclick API: https://api.prox
 
 Please write the function in `sender.ts` that will call the `EmailSender.sendEmail()` function.
 If `sendEmail()` throws an error, it should retry 4 times with 10min interval, then stop retrying while logging an error message.
+Please write the unit tests for this function
 
 ## Part 3
 
@@ -42,6 +43,7 @@ Please write an API that will serve your previously defined functions
 * Write your code in the /api folder
 * Feel free to use any framework for writing your API
 * Make sure to handle error cases and return appropriate responses
+* Please write unit tests for the API endpoints
 
 ## Commands
 
