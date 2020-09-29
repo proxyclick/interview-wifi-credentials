@@ -45,6 +45,10 @@ Please write an API that will serve your previously defined functions
 * Make sure to handle error cases and return appropriate responses
 * Please write unit tests for the API endpoints
 
+## Part 4
+
+Please do the architecture exercice located in Webhooks.md
+
 ## Commands
 
 - `npm install` install the necessary dependencies
