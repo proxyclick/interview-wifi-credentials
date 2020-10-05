@@ -11,7 +11,7 @@ The visitors should be searched through via the Proxyclick API: https://api.prox
 - Client ID: `98C5EB84170E6FB3617C47A5B17ECFACB4A0FD49`
 - Client secret will be sent via email
 
-# Goal
+### Goal
 
 - Make sure that all the tests cases located in `visitors.test.ts` and `process.test.ts` pass. Do not modify the test files
 - Start by writing the body of the function `getVisitors` that search through visitors using Proxyclick API
@@ -20,7 +20,7 @@ The visitors should be searched through via the Proxyclick API: https://api.prox
 - For the last test case, we would like to optimize the process so that consecutive checks-in of the same visitor do not need to call `generate` multiple times. The first result should be saved in-memory
 - Create a zip file with your solution (the project) and send it back to your interviewer
 
-# Flow
+### Flow
 
 1. Check-in event coming in. Find visitor corresponding to email from Proxyclick API
 2. If visitor not found -> throw an error
