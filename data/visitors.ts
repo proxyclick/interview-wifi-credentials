@@ -14,7 +14,7 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "anglais",
+      displayName: "English",
     },
     pictureOriginal:
       "https://api.proxyclick.com/full/images/4C7D2DCDC85C7FD0BEBC36A6F8BCAFE91226352D84CD70DA162ED999FF500721E92A934E41D67D58C9C0DC30DCABC9D0AD0D8661C2C685332C6CBE3419112F57C16478B02D7DAAF4F59C280D3DAA9542/0%2D128x128%2Dpo.png",
@@ -50,7 +50,7 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "anglais",
+      displayName: "English",
     },
     pictureOriginal:
       "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
@@ -86,7 +86,7 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "anglais",
+      displayName: "English",
     },
     pictureOriginal:
       "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
@@ -122,7 +122,7 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "anglais",
+      displayName: "English",
     },
     pictureOriginal:
       "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
@@ -158,7 +158,7 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "anglais",
+      displayName: "English",
     },
     pictureOriginal:
       "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
@@ -194,7 +194,7 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "anglais",
+      displayName: "English",
     },
     pictureOriginal:
       "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
@@ -230,7 +230,7 @@ export const visitors = [
     language: {
       code: "en",
       name: "English",
-      displayName: "anglais",
+      displayName: "English",
     },
     pictureOriginal:
       "https://static.proxyclick.com/d75d8d08/app/img/vm-visitor-avatar.png",
